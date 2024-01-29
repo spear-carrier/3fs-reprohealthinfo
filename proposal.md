@@ -6,62 +6,37 @@ I'd like to work alone on this - as I'm missing some of the class meetings, live
 
 ## Project Summary
 
-5 paragraphs
+Trust is a necessary condition for effective public health policy. In a crisis, the importance of not only trust, but of understanding how information control works, is paramount. The COVID-19 pandemic was a clear demonstration of the spectrum of actors transmitting and consuming information online; from public health professionals, to presidents, to YouTube users. It is not clear that there is a consensus of how public health professionals should contend with information control during the next crisis, however, last year three researchers published a paper identifying what that crisis would be: Abortion misinformation. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10196890/ 
 
-A good paper introduction is fairly formulaic. If you follow a simple set of rules, you can write a very good introduction. The following outline can be varied. For example, you can use two paragraphs instead of one, or you can place more emphasis on one aspect of the intro than another. But in all cases, all of the points below need to be covered in an introduction, and in most papers, you don't need to cover anything more in an introduction.
+This paper considers information control in the U.S. regarding abortion and "Crisis Pregnancy Centers" (CPCs), or Limited Service Pregnancy Centers (LSPCs). These entities are non for profits, funded by a network of anti-abortion political groups. It's been estimated that CPCs spent over $600 million in 2019. There are an estimated 2400 CPCs in the U.S., far outnumbering healthcare clinics that provide abortions. CPCs are unlicensed and unregulated, and are not subject to the Health Insurance Portability and Accountability Act (HIPPA) laws, raising concerns about  patient information, and legal accountability if that information were to be misused. CPCs have a documented history of propagating false information regarding abortion, such as that the procedure increases women's risk of cancer, invented "syndromes" (https://jamanetwork-com.proxy.uchicago.edu/journals/jama/fullarticle/400644), as well as providing clients with inaccurate information about sexually transmitted infections (STIs) and contraception. It's also been reported that search engine providers are not discriminating between reproductive healthcare clinics staffed by physicians, and CPC alternatives when users search for terms like "abortion care". Eggregiously, the users most targeted by google with ads for CPCs are from low-income households. https://www.theguardian.com/world/2023/feb/07/google-targets-low-income-women-anti-abortion-pregnancy-center-study This paper seeks to explore information control regarding the issue of reproductive healthcare and CPCs by examining SEO data from various geographical locations in the U.S. based on the State policy status of abortion care at that location, as well as by using search results from endpoints in those locations for keywords related to CPC misinformation. I also plan to compare top ten search results for "abortion care" across several geographies, and to classifiy the accuracy of those search results with a set of lableled data of known CPCs. Ideally, the study of information control as it pertains to public health would be used to improve the wellbeing of the public and limit harms caused by private wielders of information control methods who seek to further individual financial, religious, or political goals. The NIH has currently paused a more than $150 million project to improve what is calls "public health communications science" so that the NIH can ". . .reconsider its scope and aims in the context of the current regulatory and legal landscape around communication platforms. Work like this proposed study could one day help inform public health projects like that the NIH had proposed. 
 
-Paragraph 1: Motivation. At a high level, what is the problem area you are working in and why is it important? It is important to set the larger context here. Why is the problem of interest and importance to the larger community?
+In this paper, I plan to show that for a set of salient search terms related to CPCs, there is geographic variation that correlates with State level policy regarding reproductive healthcare. Set of Terms: {abortion pill reversal, abortion breast cancer, post-abortion syndrome, abortion depression, . . . }
 
-Paragraph 2: What is the specific problem considered in this paper? This paragraph narrows down the topic area of the paper. In the first paragraph you have established general context and importance. Here you establish specific context and background.
-
-Paragraph 3: "In this paper, we show that ...". This is the key paragraph in the intro - you summarize, in one paragraph, what are the main contributions of your paper given the context you have established in paragraphs 1 and 2. What is the general approach taken? Why are the specific results significant? This paragraph must be really really good. If you can't "sell" your work at a high level in a paragraph in the intro, then you are in trouble. As a reader or reviewer, this is the paragraph that I always look for, and read very carefully.
-
-You should think about how to structure this one or two paragraph summary of what your paper is all about. If there are two or three main results, then you might consider itemizing them with bullets or in test (e.g., "First, ..."). If the results fall broadly into two categories, you can bring out that distinction here. For example, "Our results are both theoretical and applied in nature. (two sentences follow, one each on theory and application)"
 
 Paragraph 4: At a high level what are the differences in what you are doing, and what others have done? Keep this at a high level, you can refer to a future section where specific details and differences will be given. But it is important for the reader to know at a high level, what is new about this work compared to other work in the area.
 
-Paragraph 5: "The remainder of this paper is structured as follows..." Give the reader a roadmap for the rest of the paper. Avoid redundant phrasing, "In Section 2, In section 3, ... In Section 4, ... " etc.
+The tech-transparency project studied how Google serves ads for CPCs, targeting women from low income households: https://www.techtransparencyproject.org/articles/google-helps-fake-abortion-clinics-target-low-income-women . This study created google accounts based in Phoenix, Atlanta, and Miami and filled out google profile information on income and then compared ad serves across these accounts. 
 
--   Think of this as a draft of your project report introduction.
-    Advice on [writing a good
-    introduction](http://www-net.cs.umass.edu/kurose/writing/intro-style.html)
--   What is the problem?
--   Why is it an important problem? (Provide citations if possible to
-    support your claims of relevance. Examples could be previous
-    work/research papers, news stories, anecdotes, software packages,
-    etc.)
--   What kinds of actions could be taken based on your results, and who
-    is equipped to take those actions? 
+
+"The remainder of this paper is structured as follows. . .
 
 
 ## Related Work
 
--   Draft as much as you can of your related work section.
--   Organize your related work so it is more than just a "list". 
-    Organize thematically; look at related work sections from other
-    published papers for examples.
--   Include all references (e.g., as bibtex) so your related work is as
-    complete as possible for now.
--   Also articulate *how your work extends* the related work you cite.
+This work expands on tech-transparency's previous project. . . 
 
 ## Project Preparation and Prerequisites 
 
--   What do you need to complete this project?
--   If your project is measurement based, describe the data you have and
-    the data you'll need to collect, as well as results you might expect
-    and how you would present them
--   If your project is to build a system (e.g., censorship circumvention
-    tool), describe how you may go about doing that (will you extend an
-    existing software code base, for example)?
+To complete this project, I'll need to leverage several sources of data. First, I plan to use a free trial of semrush for SEO related data - https://www.semrush.com/projects/ . Next, I'll use the abortion policy API as structured dataset indicating the legal status of reproductive healthcare on a state by state basis - https://www.abortionpolicyapi.com/ Finally, I'll need to gain access to geographically distributed enpoints capable of conducting search queries in a browswer and transmitting the results to me for colleciton or comparison. I am still finalizing how I will do this, but Google Cloud is what I'm planning on. 
+
+At the end of the data collection, I should have SEO data on keywords such as U.S. based volume of search for the keyword, commonly asked questions involving the keyword, as well as a "difficulty score" indicating how competitive the market for getting placed as search results is for that keyword. Ideally, I'd have this information for several geographical locations, to be determined. 
+
+I should also have a list of top ten results for various reproductive healthcare related search terms, and plan to compare these top ten results across geographies, and to identify when a top ten result for "abortion care" is in fact a CPC using a database of known CPCs - https://reproaction.org/fakeclinicdatabase/ 
 
 ## Evaluation
 
--   This of this as a starting point for the project.
--   Describe your evaluation process? Be as specific as possible about
-    your evaluation techniques
+To be written
 
 ## Ethics
 
--   Briefly discuss the ethical implications of your work. Will your
-    models suffer from any kind of bias? Will this potential bias impact
-    the fairness of any proposed solutions?
+Reproductive healthcare policy is a political issue and often cited as a complex ethical one. However, I believe that by focusing on the issues of informed consent and attempting to measure information control, that I can safely and ethically begin to contribute to the understanding of how the internnet information environment regarding CPCs is currently disposed in a few areas in the U.S. 
